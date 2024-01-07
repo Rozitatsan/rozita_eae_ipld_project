@@ -1,12 +1,15 @@
+
 import streamlit as st
 import base64
 
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="Rozita's Portfolio",
     page_icon="📊",
 )
+
+
 
 
 # ----- Left menu -----
@@ -20,11 +23,13 @@ with st.sidebar:
 
 
 # ----- Top title -----
-st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is ????</h1></div>""", unsafe_allow_html=True)  # TODO: Add your name
+st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Welcome! My name is Rozita
+         </h1></div>""", unsafe_allow_html=True)  # TODO: Add your name
 
 
 # ----- Profile image file -----
-profile_image_file_path = "profile_image.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+profile_image_file_path = "thinking.png"  
+     # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
 
 with open(profile_image_file_path, "rb") as img_file:
     img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -39,7 +44,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+current_role = "I am currently a Master's Student at EAE Business School, currently enrolled in Big Data & Analytics and pursuing the understanding of the financial and technological side of the business world :)"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -49,21 +54,23 @@ st.write("##")    # Adding some space
 # ----- About me section -----
 st.subheader("About Me")
 
+
+
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Current Role and/or Studies> 
+- 🧑‍💻 Engrossed in the pursuit of my Master's degree within the distinguished halls of EAE Business School, delving into the intricate domain of big data and analytics.
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- 🛩️ Having successfully navigated the academic seas, having earned my bachelor's degree in Business Management. Throughout my studies, I delved into the multifaceted realms of business strategy, organizational behavior, and financial management, sculpting a foundation of comprehensive knowledge in the intricate landscape of business management.
 
-- ❤️ <Your Passion and/or Interests>
+- ❤️ I love to read, paint, and dance. Books take me to different worlds, painting lets me express my creativity, and dancing is my way of enjoying the rhythm of life.
 
-- 🤖 <Your Personal Projects>
+- 🤖 I am presently engrossed in multiple personal projects, with a particular emphasis on advancing my proficiency in Python. This endeavor holds significant importance to me, as I aspire to translate these enhanced skills into tangible and impactful real-world applications.
 
-- 🏂 <Your Hobbies>
 
-- 📫 How to reach me: <Your Email>
+- 📫 How to reach me:[Email] (rozitatsangaris@gmail.com) [LinkedIn](https://www.linkedin.com/in/rozita-tsangari-79a1961b9/) [Instagram](https://www.instagram.com/rozitatsan/)
 
-- 🏠 Barcelona
+- 🏠 Living in Barcelona but with roots all over the world
 """)
 
-# Feel free to add other points like your Linkedin, Github, Social Media, etc.
+
+
